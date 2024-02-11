@@ -51,8 +51,84 @@ body {
     list-style: none;
 }
 
+h1{
+    font-size: 3em;
+}
+
+span {
+    color: orangered;
+}
+
 .menu a {
     color: white;
     text-decoration: none;
     padding: 5px;
+}
+
+/* cuerpo */
+
+.main {
+    margin: 0 auto;
+    width: 75vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.download-cv {
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.download-cv:hover {
+    background-color: white;
+    color: black;
+}
+
+.main img{
+    width: 450px;
+    border: 7px solid orangered;
+    height: 500px;
+    margin-left: 5vw;
+}
+
+.About {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    align-items: center;
+
+}
+
+.About img{
+    width: 100%;
+    grid-column: 1/5;
+}
+
+.about-info{
+    grid-column: 5/10;
+    padding: 4em;
+}
+.about-info h2 {
+    font-size: 2em;
+    color: darkolivegreen;
+}
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color: orangered;
+    margin-top: 10px;
+    margin-bottom: 3em;
+}
+
+.About p {
+    margin-bottom: 1em;
+
 }
