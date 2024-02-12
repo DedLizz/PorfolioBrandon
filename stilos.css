@@ -20,12 +20,12 @@ body {
 .wrapper {
     white-space: 100vw;
     height: 100vh;
-    background-color: darkolivegreen;
+    background-color: #50312F;
     color: white;
 }
 
 .bran span {
-    color: orangered;
+    color: #aebd38;
 }
 
 .bran {
@@ -39,7 +39,7 @@ body {
 }
 
 .menu .active {
-    color: orangered;
+    color: #aebd38;
 }
 
 .active:hover {
@@ -56,7 +56,7 @@ h1{
 }
 
 span {
-    color: orangered;
+    color: #aebd38;
 }
 
 .menu a {
@@ -78,7 +78,7 @@ span {
 
 .download-cv {
     padding: 10px 20px;
-    background-color: orangered;
+    background-color: #aebd38;
     color: white;
     border: none;
     border-radius: 20px;
@@ -93,7 +93,7 @@ span {
 
 .main img{
     width: 450px;
-    border: 7px solid orangered;
+    border: 7px solid #aebd38;
     height: 500px;
     margin-left: 5vw;
 }
@@ -117,13 +117,13 @@ span {
 }
 .about-info h2 {
     font-size: 2em;
-    color: darkolivegreen;
+    color: black;
 }
 
 .divider {
     height: 4px;
     width: 60px;
-    background-color: orangered;
+    background-color: #aebd38;
     margin-top: 10px;
     margin-bottom: 3em;
 }
@@ -132,3 +132,89 @@ span {
     margin-bottom: 1em;
 
 }
+
+.Porfolio {
+    width: 100vw;
+    background-color: #50312F;
+    color: white;
+}
+
+.porfolio-headings {
+    width: 100vw;
+    padding: 5em;
+
+}
+
+.porfolio-headings h2 {
+    font-size: 2.5em;
+}
+
+.Porfolio .container {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    background-color: #744946;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.estilo-p {
+    height: 110px;
+}
+
+
+
+.card_img {
+    width: 100%;
+    height: 250px;
+    /* background-image: url(/imagenes/scripts.jpg); */
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card_title {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.card_projects_links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card_projects_links a {
+    color: #aebd38;
+    text-decoration: none;
+}
+
+.card_projects_links i {
+    font-size: 2em;
+}
+
+.proyect-details-contents a {
+    text-decoration: none;
+    color: black;
+}
+
+.proyect-details-contents {
+    display: flex;
+    justify-content: center;
+}
+
+.proyect-details-contents button {
+    width: 70%;
+
+}
+
