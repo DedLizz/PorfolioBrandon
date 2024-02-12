@@ -1,0 +1,59 @@
+ inicializa git
+- git init
+
+para establecer el main como principal
+-git config --global init.defaultBranch main
+
+para ver si esta bien lo del main
+- git branch -m main
+
+ahora se configura el nombre y emal de manera global
+-git config --global user.name "DedLizz"
+-git config --global user.email "compuredtec1994@gmail.com"
+
+
+agregar los directorios 
+-$ git add .
+
+
+luego se hace un commit
+-git commit -m "mi primer commit porfolio"
+
+
+luego esto
+git branch -M main
+
+
+luego se establece la direccion del repositorio en github
+-git remote add origin https://github.com/DedLizz/PorfolioBrandon.git
+
+
+luego se hace un push para subir los archivos al repositorio
+-git push -u origin main
+
+ingresas nombre de la cuenta github DedLizz
+contraseña se ingresa el token 
+
+#########################################################################
+para descargar el archivo en otra carpeta otra pc
+-git clone https://github.com/DedLizz/PorfolioBrandon.git
+
+#############################################################################
+####################### PARA ACTUALIZAR REPOSITORIO GITHUB ####################
+para seleccionar todo
+- git add .
+
+para hacer un commit
+-git commit -m "prueba actualizacion"
+
+para subir
+-git push
+
+###################################################################################################
+####################### PARA ACTUALIZAR lOS ARCHIVOS DE MI CARPETA DE PROYECTO ####################
+
+-git pull origin main
+
+
+
+
