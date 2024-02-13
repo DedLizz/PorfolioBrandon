@@ -92,9 +92,9 @@ span {
 }
 
 .main img{
-    width: 450px;
+    width: 25vw;
     border: 7px solid #aebd38;
-    height: 500px;
+    /* height: 50vh; */
     margin-left: 5vw;
 }
 
@@ -155,18 +155,62 @@ span {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
-    width: 350px;
+    flex: 0 1 calc(25% - 20px); /* Establece el tamaño de la carta */
+    width: 20%;
     height: 500px;
     background-color: #744946;
     border-radius: 15px;
     margin: 10px;
 }
 
+.card:hover {
+    transform: scale(1.1);
+}
+
+
 .estilo-p {
     height: 110px;
+}
+
+
+
+.btn-pag {
+    height: 20vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: -10%;
+    flex-wrap: wrap;
+}
+
+
+.btn-pag button {
+    transition: transform 0.3s ease; /* Agrega una transición suave al efecto */
+    margin: 5px;
+
+    padding: 10px 20px;
+    background-color: #aebd38;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+.btn-pag button:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón al pasar el ratón por encima */
+}
+
+
+.card_title h2,
+.estilo-p p,
+.proyect-details-contents button {
+  font-size: 0.8em; /* Tamaño de fuente relativo */
+  padding: 0.5em 1em; /* Espaciado interno relativo */
 }
 
 
@@ -201,7 +245,7 @@ span {
 
 .card_projects_links i {
     font-size: 2em;
-}
+} 
 
 .proyect-details-contents a {
     text-decoration: none;
@@ -215,6 +259,131 @@ span {
 
 .proyect-details-contents button {
     width: 70%;
+}
+
+
+/* esta parte es transicion cuando se oculta/muestra las cartas */
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease; /* ajusta la duración y la función de temporización según tu preferencia */
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease; /* ajusta la duración y la función de temporización según tu preferencia */
+}
+/* fin de la transición */
+
+.contac-section {
+    width: 100vw;
+    background-color: #261716;
+    color: white;
+}
+
+.contac-section h2 {
+    font-size: 2.5em;
+}
+
+.contac-headings {
+    width: 100vw;
+    padding: 5em;
 
 }
+
+.contac-section .container-contact {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container-contact img {
+    width: 35vw;
+    height: 35em;
+    bottom: 0;
+    margin-left: -200px;
+    margin-right: 5em;
+}
+
+.container-contact form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+}
+
+.form input {
+    padding: 10px 2px;
+    margin-top: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #aebd38;
+}
+
+.form textarea {
+    margin-top: 1em;
+    background: none;
+    color: white;
+    padding: 1.5em;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 150px;
+}
+
+.form button {
+    height: 30px;
+    margin-top: 1em;
+    border-radius: 15px;
+    border: none;
+    background-color: #aebd38;
+    color: white;
+}
+
+.form button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* final de pagina */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color:#aebd38;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content h2 {
+    font-size: 3em;
+
+}
+
+.footer-content h5 {
+    font-size: 1.5em;
+}
+
+.social-network  {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+}
+
+.social-network i {
+    font-size: 2em;
+}
+
+
+
+
 
